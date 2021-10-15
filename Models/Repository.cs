@@ -36,5 +36,6 @@ namespace PartyInvites.Models
         {
             loggedInuser = null;
         }
+
     }
 }

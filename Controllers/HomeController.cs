@@ -48,22 +48,35 @@ namespace PartyInvites.Controllers
         [HttpPost]
         public ViewResult SignUp(UserSignUp request)
         {
+
+
             if (ModelState.IsValid)
             {
-                UserInfo temp = new UserInfo();
-                temp.FirstName = request.FirstName;
-                temp.LastName = request.LastName;
-                temp.Email = request.Email;
-                temp.Phone = request.Phone;
-                temp.Password = request.Password;
+                var user = Repository.Users.Where(user => user.Email == request.Email).FirstOrDefault();
 
-                Repository.AddUser(temp);
+                if (user != null)
+                {
+                    ViewBag.UserAlreadyExists = 1;
+                    return View("SignUp", request);
+                }
+                else
+                {
+                    ViewBag.UserAlreadyExists = 0;
+                    UserInfo temp = new UserInfo();
+                    temp.FirstName = request.FirstName;
+                    temp.LastName = request.LastName;
+                    temp.Email = request.Email;
+                    temp.Phone = request.Phone;
+                    temp.Password = request.Password;
 
-                return View("Login");
+                    Repository.AddUser(temp);
+
+                    return View("Login");
+                }
             }
             else
             {
-                return View();
+                return View("SignUp", request);
             }
 
         }
@@ -71,11 +84,11 @@ namespace PartyInvites.Controllers
         [HttpGet]
         public ViewResult Login()
         {
-            return View();
+            return View("Login");
         }
 
         [HttpPost]
-        public ViewResult Login(UserInfo request)
+        public ActionResult Login(UserInfo request)
         {
             if (ModelState.IsValid)
             {
@@ -84,16 +97,16 @@ namespace PartyInvites.Controllers
                 {
                     Repository.LogInUser(user);
 
-                    return View("Dashboard", Repository.LoggedInUser);
+                    return RedirectToAction("Dashboard","Home", Repository.LoggedInUser);
                 }
                 else
                 {
-                    return View(request);
+                    return RedirectToAction("Login", "Home", request);
                 }
             }
             else
             {
-                return View(request);
+                return RedirectToAction("Login", "Home", request);
             }
 
         }
