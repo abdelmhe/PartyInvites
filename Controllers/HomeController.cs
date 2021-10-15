@@ -82,9 +82,9 @@ namespace PartyInvites.Controllers
                 var user = Repository.Users.Where(user => user.Email == request.Email).FirstOrDefault();
                 if (user != null && user.Password == request.Password)
                 {
-                    Repository.LogInUser(request);
+                    Repository.LogInUser(user);
 
-                    return View("Dashboard");
+                    return View("Dashboard", Repository.LoggedInUser);
                 }
                 else
                 {
@@ -96,6 +96,36 @@ namespace PartyInvites.Controllers
                 return View(request);
             }
 
+        }
+
+        public ViewResult SignOut()
+        {
+            Repository.LogOutUser();
+            return View("Login");
+        }
+
+        public ViewResult Dashboard()
+        {
+            if (Repository.LoggedInUser != null && Repository.LoggedInUser.Email != null)
+            {
+                return View("Dashboard", Repository.LoggedInUser);
+            }
+            else
+            {
+                return View("Login");
+            }
+        }
+
+        public ViewResult ListUsers()
+        {
+            if (Repository.LoggedInUser != null && Repository.LoggedInUser.Email != null)
+            {
+                return View("ListUsers", Repository.Users);
+            }
+            else
+            {
+                return View("Login");
+            }
         }
     }
 }

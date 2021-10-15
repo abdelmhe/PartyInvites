@@ -21,8 +21,10 @@ C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\scopedcs
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.TagHelpers.input.cache
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.TagHelpers.output.cache
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.RazorCoreGenerate.cache
+C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListResponses.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\RsvpForm.cshtml.g.cs
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\SignUp.cshtml.g.cs
@@ -39,6 +41,3 @@ C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInv
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.pdb
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.csproj.CopyComplete
-C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
-C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs

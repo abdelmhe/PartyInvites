@@ -23,16 +23,18 @@ namespace PartyInvites.Models
             users.Add(request);
         }
 
-        private static UserInfo loggedInusers = new UserInfo();
+        private static UserInfo loggedInuser = new UserInfo();
+
+        public static UserInfo LoggedInUser => loggedInuser;
 
         public static void LogInUser(UserInfo request)
         {
-            loggedInusers = request;
+            loggedInuser = request;
         }
 
         public static void LogOutUser()
         {
-            loggedInusers = null;
+            loggedInuser = null;
         }
     }
 }
