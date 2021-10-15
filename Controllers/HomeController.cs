@@ -10,7 +10,7 @@ namespace PartyInvites.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("SignUp");
         }
 
         [HttpGet]
@@ -39,5 +39,65 @@ namespace PartyInvites.Controllers
             return View(Repository.Responses.Where(r => r.WillAttend == true));
         }
 
+        [HttpGet]
+        public ViewResult SignUp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult SignUp(UserSignUp request)
+        {
+            if (ModelState.IsValid)
+            {
+                UserInfo temp = new UserInfo();
+                temp.FirstName = request.FirstName;
+                temp.LastName = request.LastName;
+                temp.Email = request.Email;
+                temp.Phone = request.Phone;
+                temp.Password = request.Password;
+
+                Repository.AddUser(temp);
+
+                return View("Login");
+            }
+            else
+            {
+                return View();
+            }
+
+        }
+
+        [HttpGet]
+        public ViewResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Login(UserInfo request)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = Repository.Users.Where(user => user.Email == request.Email).FirstOrDefault();
+                if (user != null && user.Password == request.Password)
+                {
+                    Repository.LogInUser(request);
+
+                    return View("Dashboard");
+                }
+                else
+                {
+                    return View("Login",request);
+                }
+
+                
+            }
+            else
+            {
+                return View();
+            }
+
+        }
     }
 }
