@@ -88,14 +88,12 @@ namespace PartyInvites.Controllers
                 }
                 else
                 {
-                    return View("Login",request);
+                    return View(request);
                 }
-
-                
             }
             else
             {
-                return View();
+                return View(request);
             }
 
         }
