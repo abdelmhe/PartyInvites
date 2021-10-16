@@ -42,3 +42,4 @@ C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInv
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListUsers.cshtml.g.cs
+C:\Users\Lenovo\Desktop\Assignment\PartyInvites\obj\Debug\netcoreapp3.1\PartyInvites.csproj.AssemblyReference.cache

@@ -33,7 +33,7 @@ namespace PartyInvites.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Please enter your phone number")]
-        [RegularExpression(@"\d{3}-\d{3}-\d{4}")]
+        [RegularExpression(@"\d{3}-\d{3}-\d{4}", ErrorMessage ="Please Input a valid phone number like (999-999-9999)")]
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "Please specify your password")]
