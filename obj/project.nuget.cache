@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d8HLhYgUmRjBB7edYt1ly+8BKsPCHrUrRHdww+5eaDKcQTG06b8s5ClKHLdw+wzDdyFGnRpi/wZ+2qksmRy9Dw==",
+  "dgSpecHash": "4z93+//zVZou4b8Zge0SOg/ig8RHGPV2uqReyLKZjLnYLCxU68GDtqiHf4uGk5eccHjvN9rz/BMnOoEdy0krAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Assignment\\PartyInvites\\PartyInvites.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/hebahisham/Desktop/Hebat-Abdelmouneim As1ES/PartyInvites/PartyInvites.csproj",
+  "expectedPackageFiles": [
+    "/Users/hebahisham/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.18/microsoft.netcore.app.host.osx-x64.3.1.18.nupkg.sha512"
+  ],
   "logs": []
 }
